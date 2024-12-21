@@ -14,10 +14,9 @@
 .header__links-list {
   display: flex;
   gap: 32px;
-}
-.header__links-list {
   list-style: circle;
 }
+
 .header__link-list-item_no-bullit {
   list-style: none;
 }
