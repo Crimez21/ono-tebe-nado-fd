@@ -2,18 +2,21 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  margin-top: 95px;
+  margin-top: 90px;
   margin-right: 53px;
   margin-bottom: 90px;
   margin-left: 50px;
   font-size: 18px;
 }
+
 .header-link-no-underline {
   text-decoration: none;
 }
+
 .header__links-list {
   display: flex;
   gap: 32px;
+  padding-bottom: 10px;
   list-style: circle;
 }
 
@@ -25,34 +28,37 @@
   display: block;
   width: 135px;
 }
+
 .adress {
   display: flex;
   flex-direction: column;
-  justify-self: end;
-  max-width: 236px;
-  max-height: 98px;
-  padding-bottom: 20px;
+  max-width: 262px;
   font-style: normal;
   line-height: 24px;
 }
-.header__menu {
-  padding-bottom: 10px;
+
+.header-adress {
+  justify-self: end;
+  max-width: 236px;
 }
 
 .cover {
   position: relative;
   min-height: 757px;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .overlay {
   position: absolute;
   inset: 0px;
   z-index: 1;
-  background-color: rgb(0 0 0 / 0.4);
+  opacity: 60%;
+  background-color: rgb(0 0 0);
 }
+
 .cover__tittle {
   position: relative;
   z-index: 2;
@@ -64,21 +70,25 @@
   letter-spacing: 30px;
   text-transform: uppercase;
 }
+
 .aligned-text {
   padding-left: 50px;
   text-align: start;
 }
+
 .aligned-text_center {
   display: block;
   padding-top: 17px;
   padding-left: 30px;
   text-align: center;
 }
+
 .aligned-text_right {
   padding-top: 17px;
   padding-right: 20px;
   text-align: right;
 }
+
 .description {
   position: relative;
   z-index: 2;
@@ -90,12 +100,15 @@
   padding-left: 49px;
   color: white;
 }
+
 .cover-description-text {
   font-size: 22px;
   text-transform: uppercase;
   word-spacing: 19px;
 }
+
 .bet-button {
+  border: 1px solid;
   border-color: white;
   padding: 12px 31px;
   color: white;
@@ -112,52 +125,46 @@
   margin-bottom: 31px;
   list-style: none;
 }
+
 .lot-card-list-item {
   display: flex;
   width: 334px;
   min-height: 596px;
 }
+
 .card-link {
+  position: relative;
   height: 100%;
   text-decoration: none;
 }
+
 .card_type_film {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   height: 100%;
-  background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url(../images/card-lot-01.jpg) no-repeat center / cover;
 }
+
 .card_type_book {
-  position: relative;
   height: 100%;
-  background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url(../images/card-lot-02.jpg) no-repeat center / cover;
 }
+
 .card_type_picture {
-  position: relative;
   height: 100%;
-  background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url(../images/card-lot-03.jpg) no-repeat center / cover;
 }
+
 .lots {
   min-height: 723px;
   margin-top: 180px;
 }
+
 .lots__heading {
   padding-bottom: 27px;
   padding-left: 64px;
   font-size: 40px;
   text-transform: uppercase;
 }
+
 .card-tittle {
   position: relative;
   z-index: 2;
@@ -171,6 +178,7 @@
   text-transform: uppercase;
   white-space: pre-line;
 }
+
 .card-text {
   position: relative;
   z-index: 2;
@@ -182,10 +190,12 @@
   text-decoration: none;
   white-space: pre-line;
 }
+
 .lot-look-more-link {
   padding-left: 64px;
   font-size: 20px;
 }
+
 .card-description {
   display: flex;
   flex-direction: column;
@@ -194,14 +204,15 @@
   width: 100%;
   min-height: 100%;
 }
+
 .about {
   display: grid;
   grid-template-columns: 310px 1fr;
-  max-width: 1100px;
   margin-top: 152px;
-  margin-right: 29px;
+  margin-right: 24px;
   margin-left: 71px;
 }
+
 .about-logo {
   display: flex;
   justify-content: center;
@@ -211,40 +222,42 @@
   border-radius: 50%;
   background-color: black;
 }
+
 .about-logo-image {
   width: 148px;
-  height: 114px;
 }
+
 .about-tittle {
   padding-bottom: 100px;
   font-size: 40px;
   text-transform: uppercase;
 }
-.paragraph {
+
+.about-text {
+  width: 688px;
   font-size: 20px;
 }
-.about-text {
+
+.about-text-padding__top {
+  width: 693px;
   padding-top: 24px;
 }
+
+.about-text-transfer {
+  width: 693px;
+}
+
 .about-column {
   margin-top: 102px;
+  word-break: keep-all;
 }
+
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  min-height: 180px;
   margin-top: 181px;
   font-size: 18px;
-}
-.footer-adress {
-  display: flex;
-  flex-direction: column;
-  max-width: 260px;
-  max-height: 98px;
-  padding-bottom: 20px;
-  font-style: normal;
-  line-height: 24px;
 }
 
 .footer-menu-list {
@@ -267,5 +280,4 @@
 
 .footer-social-icon {
   width: 48px;
-  height: 48px;
 }
